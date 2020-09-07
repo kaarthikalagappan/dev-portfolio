@@ -1,0 +1,251 @@
+body {
+    margin: 0 auto;
+}
+
+.Home {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+.Layout {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.panels {
+    position: relative;
+    z-index: 100;
+}
+
+.Layout-contents {
+    font-family: 'Montserrat';
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 5.5em;
+}
+
+.main-description {
+    font-weight: 300;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+
+/* About */
+
+.about {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #2B2B2B;
+    color: white;
+    display:flex;
+    font-family: 'Roboto';
+}
+
+.about a {
+    text-decoration: none;
+    color: #8A8A8A;
+    overflow: hidden;
+}
+
+.mini-header {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.description {
+    padding: 20;
+}
+
+.avatar {
+    position: relative;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top:7%;
+}
+
+.description p{
+    font-weight: 400;
+    font-size: 17px;
+    word-spacing: 2px;
+    color: #C4C4C4;
+    margin-top: -15px;
+    padding: 5px;
+    line-height: 130%;
+}
+
+.social-icons {
+    color: white;
+    font-size: 3em;
+    margin-left: 10px;
+}
+
+.download-button {
+    align-self: center;
+}
+
+/* Resume */
+.resume {
+    overflow: hidden;
+    padding: 40px;
+    display:flex;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.resume-background {
+    background-image: linear-gradient(#d6d6d6, #b7b7b7);
+}
+
+.section-1 {
+    background-color: #D6D6D6;
+}
+
+.section-2 {
+    background-color: #d3d3d3;
+}
+
+.section-3 {
+    background-color: #cfcfcf;
+}
+
+.resume-header {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding: 5px;
+    border-left: 4.5px solid #72DDF2;
+    max-width: 200px;
+}
+
+.right-side {
+    margin-bottom: 15px;
+}
+
+.flex-container {
+    display: table;
+    width: 100%;
+}
+
+.cols {
+    display: table-cell;
+    border-bottom-width: 30px;
+    max-width: 500px;
+}
+
+.resume-mini-header {
+    font-size: 25px;
+    padding: 4px;
+    font-weight: 500;
+    border-left: 2.5px solid #4AADBD;
+    margin: 5px 5px 5px 0px;
+}
+
+.resume-description {
+    display: table;
+    width: 100%;
+    font-family: 'Domine';
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: -12px;
+    max-width: 750px;
+}
+
+.resume-description p{
+    display: table-cell;
+}
+
+.explanation {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.left-info {
+    float: left;
+}
+
+.right-info {
+    font-style: italic;
+    float: right;
+}
+
+/* Smaller Screen Sizes */
+
+@media (max-width: 950px) {
+    .cols {
+        display: block;
+        width: 100%;
+    }
+    .resume-mini-header:first-child {
+        margin-top: 25px;
+    }
+    .right-side {
+        margin-bottom: 0px;
+    }
+    .resume-description p{
+        display: block;
+        width: 100%;
+    }
+    .left-info {
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media (max-width: 750px ) {
+    .main-description {
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 17.7px;
+    }
+    .title {
+        font-size: 5em;
+    }
+    .social-icons {
+        font-size: 2.5em;
+    }
+    .description, .description p{
+        width: auto;
+        margin: 0;
+    }
+    .avatar {
+        margin-left: 0;
+        padding: 0;
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 650px ) {
+    .main-description {
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 15.5px;
+    }
+    .title {
+        font-size: 4.3em;
+    }
+    .social-icons {
+        font-size: 2em;
+    }
+}
