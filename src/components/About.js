@@ -1,30 +1,16 @@
 import React from "react"
-import Button from '@material-ui/core/Button';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import { makeStyles } from '@material-ui/core/styles';
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//       display: 'flex',
-//       maxHeight: 40,
-//       color: '#2B2B2B',
-//       backgroundColor: 'white',
-//     },
-//     button: {
-//         marginLeft: 50,
-//       },
-//   }));
 
 const About = () => {
-    // const classes = useStyles();
     return (
         <div class="about">
             <div class="description">
                 <h3 class="mini-header">Who I am</h3>
                 <p>
-                Suspendisse dapibus dapibus urna vitae congue. Phasellus rhoncus velit vitae tincidunt vestibulum. In porttitor justo at leo tincidunt, sit amet commodo magna ornare. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi.  Curabitur vel arcu id mauris convallis facilisis vitae sit amet neque. 
-                Cras mollis finibus mauris, a pharetra lectus ultrices id. Vivamus vel placerat nisl. 
+                    I'm a senior at the University of Central Florida where I'm pursuing my bachelors in Computer Science. 
+                    I'm currently working as an undergraduate researcher with <a href="https://paulgazzillo.com/" target="_blank">Dr. Paul Gazzillo</a> on a side-channel related security project and also serving as the project manager for a course project. <br />
+                </p>
+                <p>
+                    My primary interests include backend development, project management and development, and programming languages. Apart from that, I enjoy photography, bike riding, playing dungeons and dragons, and just learning new tools, in fact I built this website as a way to learn React! 
                 </p>
             </div>
             <div class="description">

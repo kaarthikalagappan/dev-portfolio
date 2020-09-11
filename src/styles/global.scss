@@ -1,11 +1,12 @@
 /* Theme Colors */
 $start_bg_color: #e6e6e6;
 $about_bg_color: #2B2B2B;
-$about_text_color: #C4C4C4;
-$link_font_color: #8f8f8f;
+$about_text_color: #c9c9c9;
+$link_font_color: #a0a0a0;
 $resume_bg_color: #DEDEDE;
-$side_bar_color: #845BB3;
+$side_bar_color: #A3D1BD;
 $mini_side_bar_color: #8ac7e6;
+$side_bar_size: 6px;
 
 
 /* Overall Styles */
@@ -28,7 +29,7 @@ body {
 	display: flex;
 	z-index: 1;
 	padding: 6vh 0 6vh 0;
-    background-size: cover !important;
+    // background-size: cover !important;
     background-color: $start_bg_color;
 	font-family: 'Montserrat';
 	color: $about_bg_color;
@@ -51,20 +52,19 @@ body {
 }
 .avatar {
     flex: 1;
-	max-width: 20vw;
+	max-width: 350px;
 }
 .social-icons {
 	a {
 		color: $about_bg_color;
-		font-size: 3em;
-		margin-left: 10px;
+		font-size: 3.5em;
+		margin-right: 10px;
 	}
 	Button {
-		margin-left: 10px;
-		margin-top: 3px;
+		margin-top: -24px;
 		color: $start_bg_color;
 		background-color:$about_bg_color;
-		min-height: 42px;
+		min-height: 49px;
 	}
 	display: flex;
 }
@@ -131,8 +131,8 @@ body {
 	font-size: 40px;
 	margin-bottom: 0px;
 	padding: 5px;
-    border-left: 4.5px solid $side_bar_color;
-    width: 30vw;
+    border-left: $side_bar_size solid $side_bar_color;
+	width: 100%;
 }
 .right-side {
 	margin-bottom: 15px;
@@ -153,19 +153,23 @@ body {
 		font-size: 28px;
 		padding: 4px;
 		font-weight: 500;
-		border-left: 2.5px solid $mini_side_bar_color;
+		border-left: $side_bar_size/2 solid $mini_side_bar_color;
 		margin: 5px 5px 5px 0px;
 	}
 }
 
-.logos, .resume-mini-header img{
+.resume-mini-header img{
 	height: 35px;
 	width: 35px;
 	border-radius: 50%;
 	margin-left: 5px;
 	background: $link_font_color;
 	padding:5px;
-	border-radius: 50%;
+}
+
+.logos {
+	height: 55px;
+	width: 80px;
 }
 
 .resume-description {
@@ -248,7 +252,7 @@ body {
 	.left-info {
 		margin-bottom: 0px;
 	}
-    .Start .contain {
+    .home .contain {
 		display: block;
 		text-align: center;
 		text-align: -moz-center;

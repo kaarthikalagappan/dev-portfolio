@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ucfLogo, sscLogo, CLogo, JavaLogo, PythonLogo } from "./MediaLogos"
+import { UCFLogo, SSCLogo, LinuxLogo, CLogo, JavaLogo, PythonLogo, GitLogo, PHPLogo, BashLogo, JavaScriptLogo, HTMLLogo, CSSLogo, CPPLogo, MySQLLogo } from "./MediaLogos"
 import { Grid, LinearProgress } from "@material-ui/core";
 import MaterialUIProgressBar from "./materialUI"
 
@@ -13,7 +13,7 @@ const Resume = () => {
                         <div class="right-side">
                             <div class="resume-mini-header">
                                 <p>University of Central Florida</p>
-                                <img src={ucfLogo} class="circle"/>
+                                <img src={UCFLogo} class="circle"/>
                             </div>
                             <div class="resume-description">
                                 <p class="left-info">Bachelor of Computer Science</p>
@@ -23,7 +23,7 @@ const Resume = () => {
                         <div class="right-side">
                             <div class="resume-mini-header">
                                 <p>Seminole State of Florida</p>
-                                <img src={sscLogo} />
+                                <img src={SSCLogo} />
                             </div>
                             <div class="resume-description">
                                 <p class="left-info">Associate of Arts (via dual-enrollment)</p>
@@ -40,20 +40,22 @@ const Resume = () => {
                         <div class="right-side">
                             <div class="resume-mini-header">
                                 <p>University of Central Florida</p>
-                                <img src={ucfLogo} />
+                                <img src={UCFLogo} />
                             </div>
                             <div class="resume-description">
                                 <p class="left-info">Undergraduate Research Assistant</p>
                                 <p class="right-info"><i>May 2019 - Present</i></p>
                             </div>
-                            <p class="resume-description explanation"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta, odio sit amet posuere sodales, dui metus aliquam ligula, nec tempor massa est in turpis. Quisque ex velit, iaculis vel diam ac, pretium bibendum velit. Duis tempor tincidunt ante a imperdiet. Aenean imperdiet metus condimentum, iaculis lacus ac, mollis massa. Aliquam id libero enim.</p>
+                            <p class="resume-description explanation">
+                                Modified the LLVM and Clang infrastructures and a source code transformer to support a customized, side-channel free architecture. Accomplished this by adding a new LLVM IR opcode that produces extra assembly code used by the side-channel free architecture, modifying Clang to emit that opcode based on the source code attributes, and customizing a Java-based source code transformer to convert specific statements into a compatible format that doesn’t induce new side-channels
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="resume panels">
                 <div class="flex-container">
-                    <h3 class="resume-header">Languages I Speak</h3>
+                    <h3 class="resume-header">Skills I Wield</h3>
                     <div class="cols">
                         <div class="right-side">
                             <ProgressBar proficiency={95}>
@@ -62,10 +64,36 @@ const Resume = () => {
                             <ProgressBar proficiency={80}>
                                 <JavaLogo />
                             </ProgressBar>
-                            <ProgressBar proficiency={70}>
+                            <ProgressBar proficiency={80}>
                                 <PythonLogo />
                             </ProgressBar>
-                            
+                            <ProgressBar proficiency={75}>
+                                <LinuxLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={70}>
+                                <GitLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={70}>
+                                <MySQLLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={50}>
+                                <BashLogo style={{marginLeft: '-15px'}}/>
+                            </ProgressBar>
+                            <ProgressBar proficiency={50}>
+                                <JavaScriptLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={50}>
+                                <HTMLLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={50}>
+                                <CSSLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={35}>
+                                <CPPLogo />
+                            </ProgressBar>
+                            <ProgressBar proficiency={30}>
+                                <PHPLogo />
+                            </ProgressBar>
                         </div>
                     </div>
                 </div>
@@ -92,8 +120,8 @@ export default Resume;
 class ProgressBar extends Component {
     render() {
       return (
-        <Grid spacing={0} container style={{alignItems: 'center'}}>
-            <Grid xs item style={{maxWidth: '50px'}}>
+        <Grid spacing={1} container style={{alignItems: 'center', margin: '5px', padding: '5px'}}>
+            <Grid xs item style={{maxWidth: 'max-content'}}>
                 {this.props.children}
             </Grid>
             <Grid xs item>

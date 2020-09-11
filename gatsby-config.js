@@ -7,28 +7,6 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-fonts-v2`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: 'Montserrat',
-    //         variable: true,
-    //         weights: ['200..900']
-    //       },
-    //       {
-    //         family: 'Montserrat Alternates',
-    //         variable: true,
-    //         weights: ['200..900']
-    //       },
-    //       {
-    //         family: 'Roboto',
-    //         variable: true,
-    //         weights: ['300..700']
-    //       }
-    //     ]
-    //   }
-    // }
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -62,5 +40,6 @@ module.exports = {
         ],
       },
     }
-  ]
+  ],
+  pathPrefix: "/dev-portfolio", 
 }
