@@ -1,0 +1,24 @@
+{
+    "first_name" : "Kaarthik",
+    "middle_name" : "A.",
+    "last_name" : "Alagappan",
+    "social_handles" : {
+        "github" : "kaarthikalagappan",
+        "linkedin" : "kaarthik-alagappan"
+    },
+    "email" : "kaarthik.alagappan@gmail.com",
+    "skills" : {
+        "C" : 95,
+        "Java" : 80,
+        "Python" : 80,
+        "Linux" : 75,
+        "Git" : 70,
+        "MySQL" : 70,
+        "Bash" : 50,
+        "JavaScript" : 50,
+        "HTML5" : 50,
+        "CSS3" : 50,
+        "C++" : 35,
+        "PHP" : 30
+    }
+}

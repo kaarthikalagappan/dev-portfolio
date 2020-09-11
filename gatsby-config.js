@@ -37,6 +37,14 @@ module.exports = {
             family: `Lora`,
             variants: [`300`, `400`, `500`, `700`]
           },
+          {
+            family: `VT323`,
+            variants: [`400`]
+          },
+          {
+            family: `Share Tech Mono`,
+            variants: [`400`],
+          },
         ],
       },
     }

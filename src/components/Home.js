@@ -5,6 +5,7 @@ import { ProfilePic } from "./MediaLogos"
 import { makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import Author from "../assets/author_details.json"
 
 const useStyles = makeStyles( () => ({
     large: {
@@ -16,17 +17,17 @@ const useStyles = makeStyles( () => ({
 const Home = () => {
     const classes = useStyles();
     return (
-        <div class="home">
-            <div class="contain">
-                <div class="avatar">
+        <div className="home">
+            <div className="contain">
+                <div className="avatar">
                     <Avatar alt="Remy Sharp" src={ProfilePic} className={classes.large} style={{border: '6px solid #1d1d1d'}}/>
                 </div>
                 <div>
-                    <h1 class="title">Hello! I'm Kaarthik.</h1>
-                    <div class="social-icons">
-                        <a href="https://github.com/kaarthikalagappan/" target="_blank"><FaGithubSquare /></a>
-                        <a href="https://www.linkedin.com/in/kaarthik-alagappan/" target="_blank"><FaLinkedin /></a>
-                        <a href="mailto:kaarthik.alagappan@gmail.com" target="_blank"><FaEnvelopeSquare /></a>
+                    <h1 className="title">Hello! I'm {Author.first_name}.</h1>
+                    <div className="social-icons">
+                        <a href={"https://github.com/"+Author.social_handles.github} target="_blank"><FaGithubSquare /></a>
+                        <a href={"https://www.linkedin.com/in/"+Author.social_handles.linkedin} target="_blank"><FaLinkedin /></a>
+                        <a href={"mailto:"+Author.email} target="_blank"><FaEnvelopeSquare /></a>
                         <div>
                             <a href="./Resume.pdf">
                                 <Button variant="contained" title="Download Resume" startIcon={<GetAppIcon />}>
