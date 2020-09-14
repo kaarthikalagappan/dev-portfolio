@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { UCFLogo, SSCLogo, LinuxLogo, CLogo, JavaLogo, PythonLogo, GitLogo, PHPLogo, BashLogo, JavaScriptLogo, HTMLLogo, CSSLogo, CPPLogo, MySQLLogo } from "./MediaLogos"
-import { Grid, LinearProgress } from "@material-ui/core";
+import { UCFLogo, SSCLogo } from "./MediaLogos"
+import { Grid } from "@material-ui/core";
 import MaterialUIProgressBar from "./materialUI"
 import Author from "../assets/author_details.json"
 const Resume = () => {
@@ -13,7 +13,7 @@ const Resume = () => {
                         <div className="right-side">
                             <div className="resume-mini-header">
                                 <p>University of Central Florida</p>
-                                <img src={UCFLogo} className="circle"/>
+                                <img src={UCFLogo} alt="UCF Logo" className="circle"/>
                             </div>
                             <div className="resume-description">
                                 <p className="left-info">Bachelor of Computer Science</p>
@@ -22,8 +22,8 @@ const Resume = () => {
                         </div>
                         <div className="right-side">
                             <div className="resume-mini-header">
-                                <p>Seminole State of Florida</p>
-                                <img src={SSCLogo} />
+                                <p>Seminole State College</p>
+                                <img src={SSCLogo} alt="SSC Logo" />
                             </div>
                             <div className="resume-description">
                                 <p className="left-info">Associate of Arts (via dual-enrollment)</p>
@@ -40,7 +40,7 @@ const Resume = () => {
                         <div className="right-side">
                             <div className="resume-mini-header">
                                 <p>University of Central Florida</p>
-                                <img src={UCFLogo} />
+                                <img src={UCFLogo} alt="UCF Logo" />
                             </div>
                             <div className="resume-description">
                                 <p className="left-info">Undergraduate Research Assistant</p>

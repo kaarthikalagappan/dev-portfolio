@@ -7,7 +7,7 @@ const About = () => {
                 <h3 className="mini-header">Who I am</h3>
                 <p>
                     I'm a senior at the University of Central Florida where I'm pursuing my bachelors in Computer Science. 
-                    I'm currently working as an undergraduate researcher with <a href="https://paulgazzillo.com/" target="_blank">Dr. Paul Gazzillo</a> on a side-channel related security project and also serving as the project manager for a course project. <br />
+                    I'm currently working as an undergraduate researcher with <a href="https://paulgazzillo.com/" target="_blank" rel="noreferrer">Dr. Paul Gazzillo</a> on a side-channel related security project and also serving as the project manager for a course project. <br />
                 </p>
                 <p>
                     My primary interests include backend development, project management and development, and programming languages. Apart from that, I enjoy photography, bike riding, playing dungeons and dragons, and learning new tools, in fact I built this website as a way to learn React! 

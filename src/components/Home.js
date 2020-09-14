@@ -25,11 +25,11 @@ const Home = () => {
                 <div>
                     <h1 className="title">Hello! I'm {Author.first_name}.</h1>
                     <div className="social-icons">
-                        <a href={"https://github.com/"+Author.social_handles.github} target="_blank"><FaGithubSquare /></a>
-                        <a href={"https://www.linkedin.com/in/"+Author.social_handles.linkedin} target="_blank"><FaLinkedin /></a>
-                        <a href={"mailto:"+Author.email} target="_blank"><FaEnvelopeSquare /></a>
+                        <a href={"https://github.com/"+Author.social_handles.github} aria-label="GitHub Link" target="_blank" rel="noreferrer"><FaGithubSquare /></a>
+                        <a href={"https://www.linkedin.com/in/"+Author.social_handles.linkedin} aria-label="LinkedIn Link" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+                        <a href={"mailto:"+Author.email} aria-label="Email Link" target="_blank" rel="noreferrer"><FaEnvelopeSquare /></a>
                         <div>
-                            <a href="./Resume.pdf">
+                            <a href="./Kaarthik_Resume.pdf">
                                 <Button variant="contained" title="Download Resume" startIcon={<GetAppIcon />}>
                                     Download Resume
                                 </Button>
