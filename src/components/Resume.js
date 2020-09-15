@@ -72,7 +72,7 @@ const Resume = () => {
                                 <p>Personal Website</p>
                             </div>
                             <p className="explanation">
-                                Right from high school I have created websites using vanilla HTML and CSS and sometimes with JavaScript. Though that helped me attain a strong fundamental knowledge on web development, it started to become tedious after a point. Then in college I heard that there are libraries that make it easier to build user interfaces, so I decided to pickup on a library; and you are seeing the product of that decision! <br />
+                                Right from high school I have created websites using vanilla HTML and CSS and sometimes with JavaScript. Though that helped me attain a strong fundamental knowledge on web development, it started to become tedious after a point. Then in college I heard that there are libraries that make it easier to build user interfaces, so I decided to pickup on a library; and you are seeing the product of that decision! <br /> <br />
                                 I made this website with a React-based framework called Gatsby to ease my way into the world of React, and it helped me learn how to abstract specific parts into components and how to integrate prebuilt components within my own website
                             </p>
                         </div>
