@@ -49,5 +49,4 @@ module.exports = {
       },
     }
   ],
-  pathPrefix: "/dev-portfolio", 
 }
