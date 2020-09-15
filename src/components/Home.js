@@ -6,6 +6,7 @@ import { makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Author from "../assets/author_details.json"
+import Resume from "../assets/Kaarthik_Resume.pdf"
 
 const useStyles = makeStyles( () => ({
     large: {
@@ -29,7 +30,7 @@ const Home = () => {
                         <a href={"https://www.linkedin.com/in/"+Author.social_handles.linkedin} aria-label="LinkedIn Link" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                         <a href={"mailto:"+Author.email} aria-label="Email Link" target="_blank" rel="noreferrer"><FaEnvelopeSquare /></a>
                         <div>
-                            <a href="./Kaarthik_Resume.pdf">
+                            <a href={Resume}>
                                 <Button variant="contained" title="Download Resume" startIcon={<GetAppIcon />}>
                                     Download Resume
                                 </Button>

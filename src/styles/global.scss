@@ -2,7 +2,7 @@
 $start_bg_color: #e6e6e6;
 $about_bg_color: #2B2B2B;
 $about_text_color: #c9c9c9;
-$link_font_color: #a0a0a0;
+$link_font_color: #919191;
 $resume_bg_color: #DEDEDE;
 $side_bar_color: #A3D1BD;
 $mini_side_bar_color: #8ac7e6;
@@ -56,12 +56,21 @@ body {
 		color: $about_bg_color;
 		font-size: 3.5em;
 		margin-right: 10px;
+		text-decoration: none;
 	}
 	Button {
 		margin-top: -24px;
 		color: $start_bg_color;
-		background-color:$about_bg_color;
+		background-color: $about_bg_color;
 		min-height: 49px;
+	}
+
+	a:hover {
+		color: $link_font_color;
+	}
+	Button:hover {
+		// color: $about_bg_color;
+		background-color: $link_font_color;
 	}
 	display: flex;
 }
