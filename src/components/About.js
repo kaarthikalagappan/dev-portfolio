@@ -1,4 +1,5 @@
 import React from "react"
+import Author from "../assets/author_details.json"
 
 const About = () => {
     return (
@@ -17,10 +18,10 @@ const About = () => {
                 <h3 className="mini-header">How to get in touch</h3>
                 <div style={{display: "inline-block"}}>
                     <p>
-                        Kaarthik A. Alagappan <br/>
-                        Sanford, Florida <br/>
-                        <a href="tel:+13866281649">386-628-1649</a> <br/>
-                        <a href="mailto:kaarthik.alagappan@gmail.com">kaarthik.alagappan@gmail.com</a>
+                        {Author.first_name} {Author.middle_name} {Author.last_name} <br/>
+                        {Author.location}<br/>
+                        <a href="mailto:kaarthik.alagappan@gmail.com">kaarthik.alagappan@gmail.com</a> <br />
+                        <a href={"https://www.linkedin.com/in/"+Author.social_handles.linkedin} aria-label="LinkedIn Link" target="_blank" rel="noreferrer">LinkedIn</a>
                     </p>
                 </div>
             </div>

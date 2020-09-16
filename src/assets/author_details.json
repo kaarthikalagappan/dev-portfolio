@@ -2,6 +2,7 @@
     "first_name" : "Kaarthik",
     "middle_name" : "A.",
     "last_name" : "Alagappan",
+    "location" : "Sanford, FL",
     "social_handles" : {
         "github" : "kaarthikalagappan",
         "linkedin" : "kaarthik-alagappan"
@@ -18,7 +19,7 @@
         "JavaScript" : 50,
         "HTML5" : 50,
         "CSS3" : 50,
-        "C++" : 35,
-        "PHP" : 30
+        "PHP" : 30,
+        "C++" : 20
     }
 }

@@ -79,6 +79,25 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+            <div className="resume panels">
+                <div className="flex-container">
+                    <h3 className="resume-header">Current Courses</h3>
+                    <div className="cols">
+                        <div className="right-side">
+                            <div className="resume-mini-header">
+                                <p style={{fontWeight: 300}}>Senior Design 2</p>
+                            </div>
+                            <div className="resume-mini-header">
+                                <p style={{fontWeight: 300}}>Computer Communication Networks Architecture</p>
+                            </div>
+                            <div className="resume-mini-header">
+                                <p style={{fontWeight: 300}}>Design and Analysis of Algorithms</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

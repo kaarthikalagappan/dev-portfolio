@@ -3,8 +3,8 @@ $start_bg_color: #e6e6e6;
 $about_bg_color: #2B2B2B;
 $about_text_color: #c9c9c9;
 $link_font_color: #919191;
-$resume_bg_color: #DEDEDE;
-$side_bar_color: #A3D1BD;
+$resume_bg_color: #cacaca;
+$side_bar_color: #8dbda8;
 $mini_side_bar_color: #8ac7e6;
 $side_bar_size: 6px;
 
@@ -13,6 +13,7 @@ $side_bar_size: 6px;
 body {
 	margin: 0 auto;
 	font-family: 'Roboto';
+    background-color: $start_bg_color;
 }
 .panels {
 	position: relative;
@@ -129,7 +130,6 @@ body {
 }
 .resume-background {
     background-color: $resume_bg_color;
-	// background-image: linear-gradient(#dbd9d9, #CFCCCC);
 }
 .resume-header {
 	font-family: 'Montserrat';
