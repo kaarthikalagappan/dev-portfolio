@@ -52,7 +52,7 @@ body {
     flex: 1;
 	max-width: 350px;
 }
-.social-icons {
+#social-icons {
 	a {
 		color: $about_bg_color;
 		font-size: 3.5em;
@@ -276,7 +276,7 @@ body {
 			margin: 0px 65px 0px 40px;
 		}
 	}
-	.social-icons {
+	#social-icons {
 		display: inline-block;
 	}
 }
