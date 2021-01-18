@@ -1,11 +1,11 @@
 /* Theme Colors */
-$start_bg_color: #e6e6e6;
+$start_bg_color: #ebebeb;
 $about_bg_color: #2B2B2B;
-$about_text_color: #c9c9c9;
-$link_font_color: #919191;
+$about_text_color: #dddddd;
+$link_font_color: #9e9e9e;
 $resume_bg_color: #cacaca;
-$side_bar_color: #8dbda8;
-$mini_side_bar_color: #8ac7e6;
+$side_bar_color: #61c097;
+$mini_side_bar_color: #67c9fa;
 $side_bar_size: 6px;
 
 
@@ -13,7 +13,12 @@ $side_bar_size: 6px;
 body {
 	margin: 0 auto;
 	font-family: 'Roboto';
-    background-color: $start_bg_color;
+	background-color: $start_bg_color;
+	a {
+		color: $about_bg_color;
+		text-decoration: none;
+		font-weight: 400;
+	}
 }
 .panels {
 	position: relative;
@@ -57,7 +62,6 @@ body {
 		color: $about_bg_color;
 		font-size: 3.5em;
 		margin-right: 10px;
-		text-decoration: none;
 	}
 	Button {
 		margin-top: -24px;
@@ -88,7 +92,6 @@ body {
   	-moz-box-shadow:    0px 0px 20px 10px rgba(0, 0, 0, 0.4);
   	box-shadow:         0px 0px 20px 10px rgba(0, 0, 0, 0.4);
 	a {
-		text-decoration: none;
 		color: $link_font_color;
 	}
 }
@@ -184,7 +187,7 @@ body {
 	width: 100%;
 	font-size: 23px;
 	margin-left: 15px;
-	margin-top: -12px;
+	margin-top: -20px;
 	p {
 		display: table-cell;
 	}
@@ -195,6 +198,10 @@ body {
 	font-size: 19px;
 	width: 100%;
 	margin-left: 15px;
+	margin-top: 5px;
+}
+.resume-description.explanation {
+	margin-top: -15px !important;
 }
 .left-info {
 	float: left;

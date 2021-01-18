@@ -13,13 +13,15 @@
         "Java" : 80,
         "Python" : 80,
         "Linux" : 75,
-        "Git" : 70,
+        "Git" : 75,
         "MySQL" : 70,
-        "Bash" : 50,
+        "HTML5" : 70,
+        "Bash" : 65,
         "JavaScript" : 50,
-        "HTML5" : 50,
+        "React" : 50,
         "CSS3" : 50,
-        "PHP" : 30,
-        "C++" : 20
+        "C++" : 35,
+        "PHP" : 25,
+        "Go" : 15
     }
 }

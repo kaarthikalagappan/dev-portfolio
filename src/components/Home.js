@@ -21,7 +21,7 @@ const Home = () => {
         <div className="home">
             <div className="contain">
                 <div className="avatar">
-                    <Avatar alt="Remy Sharp" src={ProfilePic} className={classes.large} style={{border: '6px solid #1d1d1d'}}/>
+                    <Avatar alt="Kaarthik Alagappan" src={ProfilePic} className={classes.large} style={{border: '6px solid #1d1d1d'}}/>
                 </div>
                 <div>
                     <h1 className="title">Hello! I'm {Author.first_name}.</h1>
